@@ -5,11 +5,11 @@
         <div class="card-content">
           <div class="left-side">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
+              width="243"
+              height="179"
+              viewBox="0 0 243 179"
               fill="none"
-              class="style-svg"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 clip-path="url(#clip0_862_2443)"
@@ -1223,13 +1223,24 @@
             </svg>
           </div>
           <div class="right-side">
-            <img src="../assets/logo.png" alt="Logo" />
-            <p>Insira seu e-mail e senha para acessar</p>
+            <div class="title">Day Camps</div>
+            <p class="text">Insira seu e-mail e senha para acessar</p>
             <form>
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required />
-              <label for="password">Senha:</label>
-              <input type="password" id="password" name="password" placeholder="*********" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@gmail.com"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="*********"
+                required
+              />
+
               <button type="submit">Login</button>
             </form>
           </div>
@@ -1255,7 +1266,7 @@ export default {
 }
 
 .card {
-  width: 900px;
+  width: 800px;
   height: 550px;
   flex-shrink: 0;
   border-radius: 14px;
@@ -1272,11 +1283,9 @@ export default {
   width: 50%;
   background: #e29a22;
   border-radius: 14.52px 0 0 14.52px;
-}
-
-.style-svg {
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-side {
@@ -1286,6 +1295,19 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  color: #252525;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.text {
+  color: rgba(30, 30, 30, 0.75);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 img {
