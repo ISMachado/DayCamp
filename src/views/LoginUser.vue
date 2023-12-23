@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="loginUser">
     <div class="card-container">
       <div class="card">
         <div class="card-content">
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "HomeView",
+  name: "loginUser",
 };
 </script>
 
