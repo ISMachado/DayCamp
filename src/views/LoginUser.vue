@@ -18,7 +18,9 @@
                   required
                 />
 
-                <label for="password" class="input-label mb-0 pt-3">Senha</label>
+                <label for="password" class="input-label mb-0 pt-3"
+                  >Senha</label
+                >
                 <input
                   type="password"
                   id="password"
@@ -48,7 +50,7 @@ export default {
 <style scoped>
 .card-container {
   width: 100%;
-  height: 100vh;
+  height: 70vh; 
   display: flex;
   justify-content: center;
   align-items: center;
